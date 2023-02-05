@@ -1,44 +1,63 @@
 <html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo de mídias</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://use.fontawesome.com/62e43a72a9.js"></script>
-</head>
+  <html lang="en">
+    <head>
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Catálogo de mídias</title>
+      <link rel="stylesheet" href="style.css" />
+      <script src="https://use.fontawesome.com/62e43a72a9.js"></script>
+    </head>
 
-<body>
-  <div class="container">
-    <h1 class="page-title">
-      Catálogo de Mídias Favoritas
-    </h1>
-    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
-    <p class="page-subtitle">
-      Qual seu filme favorito?
-    </p>
-    <div class="form-wrapper">      
-      <div><input type="text" id="nomeFilme" name="Filme" placeholder="Insira o nome do filme"></div>      
-      <div><input type="text" id="posterFilme" name="Poster" placeholder="Insira endereço de imagem"></div>      
-      <!-- <div><input type="text" id="trailerFilme" name="Trailer" placeholder="Insira o link do trailer"></div>       -->
-    </div>
-    <div>
-      <div>
-        <div class="add-filme">
-          <button onClick="adicionarFilme()">Adicionar Filme</button>
-          <button id='mostra-esconde' onClick="mostraEEsconde()">Exibir Filmes</button>
+    <body>
+      <div class="container">
+        <h1 class="page-title">Catálogo de Mídias Favoritas</h1>
+        <img
+          src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg"
+          class="page-logo"
+          alt=""
+        />
+        <p class="page-subtitle">Qual seu filme favorito?</p>
+        <div class="form-wrapper">
+          <div>
+            <input
+              type="text"
+              id="nomeFilme"
+              name="Filme"
+              placeholder="Insira o nome do filme"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              id="posterFilme"
+              name="Poster"
+              placeholder="Insira endereço de imagem"
+            />
+          </div>
+          <!-- <div><input type="text" id="trailerFilme" name="Trailer" placeholder="Insira o link do trailer"></div>       -->
+        </div>
+        <div>
+          <div>
+            <div class="add-filme">
+              <button onClick="adicionarFilme()">Adicionar Filme</button>
+              <button id="mostra-esconde" onClick="mostraEEsconde()">
+                Exibir Filmes
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-
-  </div>
-  <div id="listaFilmes"></div>
-  <script src="script.js"></script>
-  <a href="https://alura.com.br/" target="_blank">
-    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
-  </a>
-  
-</body>
-
+      <div id="listaFilmes"></div>
+      <script src="script.js"></script>
+      <a href="https://alura.com.br/" target="_blank">
+        <img
+          src="https://www.alura.com.br/assets/img/home/alura-logo.svg"
+          alt=""
+          class="alura-logo"
+        />
+      </a>
+    </body>
+  </html>
 </html>
