@@ -4,6 +4,7 @@ var bodyHTML = document.body.innerHTML;
 var elementoListaFilmes = document.getElementById("listaFilmes");
 carregarItemsSalvos();
 
+
 function criarCatalogo(nome, imagem) {
   elementoListaFilmes.innerHTML = "";
 
